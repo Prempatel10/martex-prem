@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - MARTEX</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pricing-page pricing-2-page">
+  <header class="topbar">
+    <a href="index.html" class="brand">
+      <img src="images/logo-blue.png" alt="MARTEX" class="brand-logo" />
+    </a>
+    <nav class="navigation">
+      <div class="nav-dropdown">
+        <a href="#">Company <span class="chevron">▾</span></a>
+        <div class="dropdown-menu">
+          <a href="about.html">About Us</a>
+          <a href="career-role.html">Careers</a>
+          <a href="#">Customers</a>
+          <a href="#">Our Blog</a>
+          <a href="contacts.html">Contact Us</a>
+        </div>
+      </div>
+      <a href="projects.html" class="nav-link">Case Studies</a>
+      <a href="pricing.html" class="nav-link">Pricing</a>
+      <a href="faqs.html" class="nav-link">FAQs</a>
+      <a href="login.html" class="nav-link">Sign In</a>
+    </nav>
+    <div class="cta-group">
+      <a href="signup.html" class="btn btn-primary">Get Started</a>
+    </div>
+  </header>
+
+  <main class="pricing-container">
+    <section class="pricing-header">
+      <h1 class="pricing-title">Simple, Flexible Pricing</h1>
+
+      <div class="billing-toggle-wrapper">
+        <span class="billing-label">Billed monthly</span>
+        <button class="toggle-switch" id="billingToggle2" aria-label="Toggle billing period"></button>
+        <span class="billing-label">Billed yearly</span>
+      </div>
+
+      <p class="billing-discount">Save up to 25% with yearly billing</p>
+    </section>
+
+    <div class="pricing-cards-container">
+      <!-- Free Plan -->
+      <div class="pricing-card starter">
+        <div class="save-badge" id="freeBadge"></div>
+        <h3 class="plan-name">Free</h3>
+        <div class="price-display">
+          <span class="price-amount"><span class="price-currency">$</span>0</span>
+          <span class="price-period" id="freePeriod">/ forever</span>
+        </div>
+        <p class="plan-description">For professionals getting started with smaller projects</p>
+        <button class="plan-button">Get started - it's free</button>
+        <div class="guarantee">
+          No credit card required
+        </div>
+        <ul class="plan-features">
+          <li>
+            <div class="feature-check">✓</div>
+            <span>2 free projects</span>
+          </li>
+          <li>
+            <div class="feature-check">✓</div>
+            <span>1 GB of cloud storage</span>
+          </li>
+          <li>
+            <div class="feature-check">✓</div>
+            <span>For personal use</span>
+          </li>
+          <li class="disabled">
+            <div class="feature-check">✗</div>
+            <span>Weekly data backup</span>
+          </li>
+          <li class="disabled">
+            <div class="feature-check">✗</div>
+            <span>No Ads, No trackers</span>
+          </li>
+          <li>
+            <div class="feature-check">✓</div>
+            <span>12/5 email support</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Plus Plan -->
+      <div class="pricing-card">
+        <div class="save-badge" id="plusBadge">Save 25%</div>
+        <h3 class="plan-name">Plus</h3>
+        <div class="price-display">
+          <span class="price-amount"><span class="price-currency">$</span><span id="plusPrice">4</span></span>
+          <span class="price-period" id="plusPeriod">/ mo</span>
+        </div>
+        <p class="plan-description">For personal use or small teams with simple workflows</p>
+        <button class="plan-button">Start 14-day trial</button>
+        <div class="guarantee">
+          7-Day Money Back Guarantee
+        </div>
+        <ul class="plan-features">
+          <li>
+            <div class="feature-check">✓</div>
+            <span>Up to 250 projects</span>
+          </li>
+          <li>
+            <div class="feature-check">✓</div>
+            <span>15 GB of Cloud Storage</span>
+          </li>
+          <li>
+            <div class="feature-check">✓</div>
+            <span>Shared team workspace</span>
+          </li>
+          <li>
+            <div class="feature-check">✓</div>
+            <span>Daily data backup</span>
+          </li>
+          <li>
+            <div class="feature-check">✓</div>
+            <span>No Ads, No trackers</span>
+          </li>
+          <li>
+            <div class="feature-check">✓</div>
+            <span>12/7 email support</span>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Pro Plan -->
+      <div class="pricing-card">
+        <div class="save-badge" id="proBadge">Save 25%</div>
+        <h3 class="plan-name">Pro</h3>
+        <div class="price-display">
+          <span class="price-amount"><span class="price-currency">$</span><span id="proPrice">7</span></span>
+          <span class="price-period" id="proPeriod">/ mo</span>
+        </div>
+        <p class="plan-description">For growing teams that need more services and flexibility</p>
+        <button class="plan-button">Upgrade your plan</button>
+        <div class="guarantee">
+          7-Day Money Back Guarantee
+        </div>
+        <ul class="plan-features">
+          <li>
+            <div class="feature-check">✓</div>
+            <span>Everything in Plus</span>
+          </li>
+          <li>
+            <div class="feature-check">✓</div>
+            <span>Private cloud hosting</span>
+          </li>
+          <li>
+            <div class="feature-check">✓</div>
+            <span>Custom security</span>
+          </li>
+          <li>
+            <div class="feature-check">✓</div>
+            <span>Advanced user permissions</span>
+          </li>
+          <li>
+            <div class="feature-check">✓</div>
+            <span>Multi-team management</span>
+          </li>
+          <li>
+            <div class="feature-check">✓</div>
+            <span>24/7 Email Support</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </main>
+
+  <section class="brands-section">
+    <p class="brands-title">Trusted and used by over 3,400 companies</p>
+    <div class="brands-slider">
+      <div class="brands-track">
+        <div class="brand-slide"><img src="images/brand-1.png" alt="Brand logo 1" /></div>
+        <div class="brand-slide"><img src="images/brand-2.png" alt="Brand logo 2" /></div>
+        <div class="brand-slide"><img src="images/brand-3.png" alt="Brand logo 3" /></div>
+        <div class="brand-slide"><img src="images/brand-4.png" alt="Brand logo 4" /></div>
+        <div class="brand-slide"><img src="images/brand-5.png" alt="Brand logo 5" /></div>
+        <div class="brand-slide"><img src="images/brand-6.png" alt="Brand logo 6" /></div>
+        <div class="brand-slide"><img src="images/brand-7.png" alt="Brand logo 7" /></div>
+        <div class="brand-slide"><img src="images/brand-8.png" alt="Brand logo 8" /></div>
+        <div class="brand-slide"><img src="images/brand-1.png" alt="Brand logo 1" /></div>
+        <div class="brand-slide"><img src="images/brand-2.png" alt="Brand logo 2" /></div>
+        <div class="brand-slide"><img src="images/brand-3.png" alt="Brand logo 3" /></div>
+        <div class="brand-slide"><img src="images/brand-4.png" alt="Brand logo 4" /></div>
+        <div class="brand-slide"><img src="images/brand-5.png" alt="Brand logo 5" /></div>
+        <div class="brand-slide"><img src="images/brand-6.png" alt="Brand logo 6" /></div>
+        <div class="brand-slide"><img src="images/brand-7.png" alt="Brand logo 7" /></div>
+        <div class="brand-slide"><img src="images/brand-8.png" alt="Brand logo 8" /></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="compare-section">
+    <div class="compare-inner">
+      <div class="compare-header">
+        <h2>Compare Our Plans</h2>
+        <p>Complete list of features available in our pricing plans</p>
+      </div>
+      <div class="compare-table-wrap">
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Features</th>
+              <th>Free</th>
+              <th>Plus</th>
+              <th>Pro</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="compare-feature-name">Available Projects</td>
+              <td>Up to 2</td>
+              <td>Up to 250</td>
+              <td>Unlimited</td>
+            </tr>
+            <tr>
+              <td class="compare-feature-name">Available Storage</td>
+              <td>2 GB</td>
+              <td>50 GB</td>
+              <td>350 GB</td>
+            </tr>
+            <tr>
+              <td class="compare-feature-name">Private Cloud Hosting</td>
+              <td><span class="table-badge table-badge--no">×</span></td>
+              <td><span class="table-badge table-badge--no">×</span></td>
+              <td><span class="table-badge table-badge--yes">✓</span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-name">User Permissions</td>
+              <td><span class="table-badge table-badge--yes">✓</span></td>
+              <td><span class="table-badge table-badge--yes">✓</span></td>
+              <td><span class="table-badge table-badge--yes">✓</span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-name">Direct Integrations</td>
+              <td><span class="table-badge table-badge--yes">✓</span></td>
+              <td><span class="table-badge table-badge--yes">✓</span></td>
+              <td><span class="table-badge table-badge--yes">✓</span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-name">Reusable Components</td>
+              <td><span class="table-badge table-badge--no">×</span></td>
+              <td><span class="table-badge table-badge--yes">✓</span></td>
+              <td><span class="table-badge table-badge--yes">✓</span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-name">Data Backup</td>
+              <td>Weekly</td>
+              <td>Daily</td>
+              <td>Daily</td>
+            </tr>
+            <tr>
+              <td class="compare-feature-name">No Ads. No Trackers</td>
+              <td><span class="table-badge table-badge--no">×</span></td>
+              <td><span class="table-badge table-badge--yes">✓</span></td>
+              <td><span class="table-badge table-badge--yes">✓</span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-name">Advanced Security</td>
+              <td><span class="table-badge table-badge--no">×</span></td>
+              <td><span class="table-badge table-badge--yes">✓</span></td>
+              <td><span class="table-badge table-badge--yes">✓</span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-name">Shared Team Workspace</td>
+              <td><span class="table-badge table-badge--no">×</span></td>
+              <td><span class="table-badge table-badge--yes">✓</span></td>
+              <td><span class="table-badge table-badge--yes">✓</span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-name">Team Management</td>
+              <td><span class="table-badge table-badge--no">×</span></td>
+              <td><span class="table-badge table-badge--no">×</span></td>
+              <td><span class="table-badge table-badge--yes">✓</span></td>
+            </tr>
+            <tr>
+              <td class="compare-feature-name">Customer Support</td>
+              <td>Limited</td>
+              <td>Basic</td>
+              <td>Priority</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="compare-cards">
+        <div class="compare-card compare-card--payments">
+          <p class="compare-card-title">Accepted Payment Methods</p>
+          <div class="payment-icons">
+            <span class="payment-icon"><img src="images/visa.png" alt="Visa logo"></span>
+            <span class="payment-icon"><img src="images/discover.png" alt="Discover logo"></span>
+            <span class="payment-icon"><img src="images/paypal.png" alt="PayPal logo"></span>
+            <span class="payment-icon"><img src="images/shopify.png" alt="Shopify logo"></span>
+            <span class="payment-icon"><img src="images/am.png" alt="American Express logo"></span>
+          </div>
+        </div>
+        <div class="compare-card compare-card--refund">
+          <p class="compare-card-title">Money Back Guarantee</p>
+          <p class="compare-card-copy">Explore Martex Premium for 14 days. If it’s not a perfect fit, receive a full
+            refund.</p>
+        </div>
+        <div class="compare-card compare-card--security">
+          <p class="compare-card-title">SSL Encrypted Payment</p>
+          <p class="compare-card-copy">Your information is protected by 256-bit SSL encryption for secure checkout and
+            payments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="faq-inner">
+      <div class="faq-header">
+        <h2>Questions & Answers</h2>
+        <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
+      </div>
+      <div class="faq-content">
+        <div class="faq-column">
+          <div class="faq-item">
+            <h3 class="faq-question">1. Getting started with Martex</h3>
+            <p class="faq-answer">Etiam amet mauris suscipit in odio integer congue metus and vitae arcu mollis blandit
+              ultrice ligula egestas magna suscipit lectus magna suscipit luctus blandit laoreet</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">2. How do I choose a plan?</h3>
+            <p class="faq-answer">An enim nullam tempor sapien gravida donec ipsum and enim porta justo integer at veina
+              vitae auctor integer congue undo magna laoreet augue pretium porta</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">3. Do I need a credit card to sign up?</h3>
+            <ul class="faq-list">
+              <li>Fringilla risus, luctus mauris orci auctor purus ligula euismod pretium purus pretium rutrum tempor
+                sapien</li>
+              <li>Nemo ipsum egestas volute undo lerpis purus primis aliquam sapien quaerat sodales pretium a purus</li>
+            </ul>
+          </div>
+        </div>
+        <div class="faq-column">
+          <div class="faq-item">
+            <h3 class="faq-question">4. Discounts for annual plans</h3>
+            <p class="faq-answer">Quaerat sodales sapien euismod blandit purus a purus ipsum primis in cubilia laoreet
+              augue luctus dolor luctus</p>
+            <p class="faq-answer">An enim nullam tempor sapien gravida donec congue metus. Vitae arcu mollis blandit
+              integer nemo volute veina</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">5. How to request a refund?</h3>
+            <p class="faq-answer">Cubilia laoreet sugue egestas and luctus donec curabitur diam vitae dapibus libero
+              guisque gravida donec neque blandit justo aliquam molestie nunc sapien justo</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-question">6. Can I cancel at anytime?</h3>
+            <p class="faq-answer">An enim tempor sapien gravida donec ipsum and enim porta justo integer at veina vitae
+              auctor integer congue undo magna laoreet augue pretium pretium</p>
+          </div>
+        </div>
+      </div>
+      <p class="faq-footer">Have any questions? <a href="contacts.html" class="faq-link">Get in Touch</a></p>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="cta-inner">
+      <h2 class="cta-title">Give it a try, it's free!</h2>
+      <p class="cta-subtitle">It only takes a few clicks to get started</p>
+      <a href="signup.html" class="cta-button">Get started - it's free</a>
+      <p class="cta-note">✓ Free for 14 days, no credit card required.</p>
+    </div>
+  </section>
+
+  <section class="section-fourteenth" id="testimonials">
+    <div class="section-fourteenth-inner">
+      <div class="section-fourteenth-copy">
+        <h2>Here’s what our amazing clients are saying</h2>
+        <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
+      </div>
+
+      <div class="testimonial-grid">
+        <article class="testimonial-card">
+          <p>Mauris donec a magnis sapien etiam pretium a congue augue volutpat lectus aenean magna and undo mauris
+            lectus laoreet tempor egestas rutrum.</p>
+          <div class="testimonial-meta">
+            <img src="images/s_14.1.png" alt="Leslie D." />
+            <div>
+              <div class="testimonial-name">Leslie D.</div>
+              <div class="testimonial-role">Web Developer</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <p>An augue cubilia undo laoreet magna suscipit egestas ipsum lectus purus ipsum and primis augue an ultrice
+            ligula egestas suscipit a lectus gestas auctor tempus feugiat impedit.</p>
+          <div class="testimonial-meta">
+            <img src="images/s_14.2.png" alt="Jennifer Harper" />
+            <div>
+              <div class="testimonial-name">Jennifer Harper</div>
+              <div class="testimonial-role">App Developer</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="testimonial-card">
+          <p>An augue cubilia laoreet undo magna ipsum semper suscipit egestas magna ipsum ligula a vitae purus and
+            ipsum primis cubilia magna suscipit.</p>
+          <div class="testimonial-meta">
+            <img src="images/s_14.3.png" alt="Jonathan Barnes" />
+            <div>
+              <div class="testimonial-name">Jonathan Barnes</div>
+              <div class="testimonial-role">jQuery Programmer</div>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div class="testimonial-brands">
+        <div class="testimonial-brands-copy">Our clients love us as much as we love them</div>
+        <div class="brand-list">
+          <div class="brand-item">
+            <img src="images/s_14.1.png" alt="Capterra" />
+            <span class="rating-value"><span class="rating-star">★</span>4.7/5</span>
+          </div>
+          <div class="brand-item">
+            <img src="images/s_14.2.png" alt="Trustpilot" />
+            <span class="rating-value"><span class="rating-star">★</span>4.9/5</span>
+          </div>
+          <div class="brand-item">
+            <img src="images/s_14.3.png" alt="G2 Crowd" />
+            <span class="rating-value"><span class="rating-star">★</span>4.2/5</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <a href="index.html" class="footer-brand">
+            <img src="images/logo-blue.png" alt="Martex logo" class="footer-brand-logo" />
+          </a>
+        </div>
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h4 class="footer-column-title">Company</h4>
+            <ul class="footer-links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="team.html">Careers</a></li>
+              <li><a href="blog-listing.html">Our Blog</a></li>
+              <li><a href="contacts.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-column-title">Product</h4>
+            <ul class="footer-links">
+              <li><a href="features.html">Integration</a></li>
+              <li><a href="reviews.html">Customers</a></li>
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="faqs.html">Help Center</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-column-title">Legal</h4>
+            <ul class="footer-links">
+              <li><a href="terms.html">Terms of Use</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="cookies.html">Cookie Policy</a></li>
+              <li><a href="features.html">Site Map</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h4 class="footer-column-title">Connect With Us</h4>
+            <p class="footer-email">hello@yourdomain.com</p>
+            <div class="footer-socials">
+              <a href="features.html" class="social-icon" aria-label="Facebook">f</a>
+              <a href="features.html" class="social-icon" aria-label="Twitter">𝕏</a>
+              <a href="features.html" class="social-icon" aria-label="GitHub">⚙</a>
+              <a href="features.html" class="social-icon" aria-label="LinkedIn">in</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">© 2025 Martex. All Rights Reserved</p>
+        <p class="footer-credit">Made with ❤️ by <a href="#">@elite-themes24</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Martex</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="page-contact">
+  <header class="topbar">
+    <a href="index.html" class="brand">
+      <img src="images/logo-blue.png" alt="MARTEX" class="brand-logo" />
+    </a>
+    <nav class="navigation">
+      <div class="nav-dropdown">
+        <a href="#">Company <span class="chevron">▾</span></a>
+        <div class="dropdown-menu">
+          <a href="about.html">About Us</a>
+          <a href="career-role.html">Careers</a>
+          <a href="reviews.html">Customers</a>
+          <a href="blog-listing.html">Our Blog</a>
+          <a href="contacts.html">Contact Us</a>
+        </div>
+      </div>
+      <a href="projects.html" class="nav-link">Case Studies</a>
+      <a href="pricing.html" class="nav-link">Pricing</a>
+      <a href="faqs.html" class="nav-link">FAQs</a>
+      <a href="login.html" class="nav-link">Sign In</a>
+    </nav>
+    <div class="cta-group">
+      <a href="signup.html" class="btn btn-primary">Get Started</a>
+    </div>
+  </header>
+
+  <main class="contact-page">
+    <section class="contact-section">
+      <div class="contact-copy">
+        <h1>Questions? Let's Talk</h1>
+        <p>Want to learn more about Martex, get a quote, or speak with an expert? Let us know what you are looking for
+          and we’ll get back to you right away.</p>
+      </div>
+
+      <div class="contact-card">
+        <form class="contact-form" action="#" method="post">
+          <div class="contact-field">
+            <div class="field-label-row">
+              <label for="topic">This question is about:</label>
+              <span class="field-note">Choose a topic, so we know who to send your request to.</span>
+            </div>
+            <select id="topic" class="contact-select" name="topic" required>
+              <option value="" disabled selected>This question is about...</option>
+              <option value="product">Product Inquiry</option>
+              <option value="pricing">Pricing</option>
+              <option value="support">Support</option>
+              <option value="partnership">Partnership</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="contact-field">
+            <div class="field-label-row">
+              <label for="name">Your Name:</label>
+              <span class="field-note">Please enter your real name.</span>
+            </div>
+            <input id="name" class="contact-input" type="text" name="name" placeholder="Your Name*" required />
+          </div>
+
+          <div class="contact-field">
+            <div class="field-label-row">
+              <label for="email">Your Email Address:</label>
+              <span class="field-note">Please carefully check your email address for accuracy.</span>
+            </div>
+            <input id="email" class="contact-input" type="email" name="email" placeholder="Email Address*" required />
+          </div>
+
+          <div class="contact-field">
+            <div class="field-label-row">
+              <label for="message">Explain your question in details:</label>
+              <span class="field-note">Your OS version, Martex version & build, steps you did. Be VERY precise!</span>
+            </div>
+            <textarea id="message" class="contact-textarea" name="message" placeholder="I have a problem with..."
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-contact">Submit Request</button>
+        </form>
+
+        <p class="contact-note">We are committed to your privacy. Martex uses the information you provide us to contact
+          you about our relevant content, products, and services. You may unsubscribe from these communications at any
+          time. For more information, check out our <a href="#">Privacy Policy</a>.</p>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <div class="cta-inner">
+        <h2 class="cta-title">Stay up to date with our news, ideas and updates</h2>
+        <div class="cta-actions">
+          <input id="footerEmail" class="section-seventeenth-input" type="email" placeholder="Your email address" />
+          <a href="#" class="cta-button">Subscribe Now</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-fourteenth" id="testimonials">
+      <div class="section-fourteenth-inner">
+        <div class="section-fourteenth-copy">
+          <h2>Here’s what our amazing clients are saying</h2>
+          <p>Ligula risus auctor tempus magna feugiat lacinia.</p>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p>Mauris donec a magnis sapien etiam pretium a congue augue volutpat lectus aenean magna and undo mauris
+              lectus laoreet tempor egestas rutrum.</p>
+            <div class="testimonial-meta">
+              <img src="images/s_14.1.png" alt="Leslie D." />
+              <div>
+                <div class="testimonial-name">Leslie D.</div>
+                <div class="testimonial-role">Web Developer</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p>An augue cubilia undo laoreet magna suscipit egestas ipsum lectus purus ipsum and primis augue an ultrice
+              ligula egestas suscipit a lectus gestas auctor tempus feugiat impedit.</p>
+            <div class="testimonial-meta">
+              <img src="images/s_14.2.png" alt="Jennifer Harper" />
+              <div>
+                <div class="testimonial-name">Jennifer Harper</div>
+                <div class="testimonial-role">App Developer</div>
+              </div>
+            </div>
+          </article>
+
+          <article class="testimonial-card">
+            <p>An augue cubilia laoreet undo magna ipsum semper suscipit egestas magna ipsum ligula a vitae purus and
+              ipsum primis cubilia magna suscipit.</p>
+            <div class="testimonial-meta">
+              <img src="images/s_14.3.png" alt="Jonathan Barnes" />
+              <div>
+                <div class="testimonial-name">Jonathan Barnes</div>
+                <div class="testimonial-role">jQuery Programmer</div>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="testimonial-brands">
+          <div class="testimonial-brands-copy">Our clients love us as much as we love them</div>
+          <div class="brand-list">
+            <div class="brand-item">
+              <img src="images/s_14.1.png" alt="Capterra" />
+              <span class="rating-value"><span class="rating-star">★</span>4.7/5</span>
+            </div>
+            <div class="brand-item">
+              <img src="images/s_14.2.png" alt="Trustpilot" />
+              <span class="rating-value"><span class="rating-star">★</span>4.9/5</span>
+            </div>
+            <div class="brand-item">
+              <img src="images/s_14.3.png" alt="G2 Crowd" />
+              <span class="rating-value"><span class="rating-star">★</span>4.2/5</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="index.html" class="footer-brand">
+              <img src="images/logo-blue.png" alt="Martex logo" class="footer-brand-logo" />
+            </a>
+          </div>
+          <div class="footer-columns">
+            <div class="footer-column">
+              <h4 class="footer-column-title">Company</h4>
+              <ul class="footer-links">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="team.html">Careers</a></li>
+                <li><a href="blog-listing.html">Our Blog</a></li>
+                <li><a href="contacts.html">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-column-title">Product</h4>
+              <ul class="footer-links">
+                <li><a href="features.html">Integration</a></li>
+                <li><a href="reviews.html">Customers</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="faqs.html">Help Center</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-column-title">Legal</h4>
+              <ul class="footer-links">
+                <li><a href="terms.html">Terms of Use</a></li>
+                <li><a href="policy.html">Privacy Policy</a></li>
+                <li><a href="cookies.html">Cookie Policy</a></li>
+                <li><a href="features.html">Site Map</a></li>
+              </ul>
+            </div>
+            <div class="footer-column">
+              <h4 class="footer-column-title">Connect With Us</h4>
+              <p class="footer-email">hello@yourdomain.com</p>
+              <div class="footer-socials">
+                <a href="features.html" class="social-icon" aria-label="Facebook">f</a>
+                <a href="features.html" class="social-icon" aria-label="Twitter">𝕏</a>
+                <a href="features.html" class="social-icon" aria-label="GitHub">⚙</a>
+                <a href="features.html" class="social-icon" aria-label="LinkedIn">in</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p class="footer-copyright">© 2025 Martex. All Rights Reserved</p>
+          <p class="footer-credit">Made with ❤️ by <a href="#">@elite-themes24</a></p>
+        </div>
+      </div>
+    </footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>
