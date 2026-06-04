@@ -399,3 +399,14 @@ if (indexTopbar && indexHero && indexLogo) {
     }
   });
 }
+
+// Mobile Menu functionality
+const navToggle = document.querySelector('.nav-toggle');
+const navigation = document.querySelector('.navigation');
+
+if (navToggle && navigation) {
+  navToggle.addEventListener('click', () => {
+    navigation.classList.toggle('active');
+    navToggle.classList.toggle('active');
+  });
+}
